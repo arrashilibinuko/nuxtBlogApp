@@ -41,6 +41,8 @@ export default {
           password: this.password,
         })
         .then(() => {
+          // eslint-disable-next-line no-console
+          console.log('/auth to /admin')
           this.$router.push('/admin')
         })
         .catch((e) => {
